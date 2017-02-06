@@ -1,0 +1,20 @@
+Package: fishnostics
+Type: Package
+Title: Diagnostic Tools For Fisheries Assessment Models
+Description: Diagnostics for fisheries assessment models, specifically CASAL
+Version: 0.1.0
+Date: 2017-02-07
+Author: Philippe Ziegler and Paul Burch
+Maintainer: Paul Burch <Paul.Burch@aad.gov.au>
+Depends:
+    R (>= 3.0.1),
+Suggests:
+    casal,
+    knitr,
+    planetfish2,
+    testthat,
+    rmarkdown
+VignetteBuilder: knitr
+LazyData: true
+License: GPL-3
+RoxygenNote: 5.0.1
