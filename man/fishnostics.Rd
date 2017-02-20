@@ -7,7 +7,13 @@
 \title{fishnostics: Diagnostics for fisheries assessment models, specifically CASAL,
 however, applicable to other fisheries assessments}
 \description{
-fishnostics: Diagnostics for fisheries assessment models, specifically CASAL,
-however, applicable to other fisheries assessments
+This package currently includes plots used to present model outputs along
+with diagnostic plots.
+}
+\details{
+The intention is that this package will be implemented in completely in
+ggplot2, however, currently base and lattice are used.
+
+Need to generate some example datsets to use for package examples
 }
 

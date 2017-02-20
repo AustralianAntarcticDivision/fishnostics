@@ -3,7 +3,8 @@
 
 #' Plot a timeseries with uncertainty
 #'
-#' Plot a timeseries with uncertainty represented as
+#' Plot a timeseries with uncertainty represented as a grey polygon with the
+#' option of adding a second series to the plot
 #' @param d dataframe with columns represnting the (could rename d to be the main series?)
 #' @param xs vector of
 #' @param d2 a second series to add as a line plot
