@@ -43,25 +43,7 @@ plot_ts_uncertainty <- function(d,
   if(is.null(xs)) xs <- as.numeric(names(d))
   ## can we asign a plot to an object then print it? Nope, think ggplot does though
   ## if we save the plot do this
-  if(save){
-    ## if save and no file name return an error
-    if(is.null(file_name))
-      stop("file name must be specified is plot is to be saved")
-    if(!file_type %in% c("png", "pdf"))
-      stop(paste0("specified file type not implemented, please use ",
-                  c("png", "pdf")))
-    ## if no path specified use the working dir
-    if(is.null(path)) path <- getwd()
-    ## save plot based on specified file_type
-    switch(
-      ## this turns the graphics device on
-      ##* add additional options
-      png = {png(filename=paste0(path,"/",file_name))
-      },
-      pdf = {pdf(filename=paste0(path,"/",file_name))
-      }
-    )
-  }
+  if(save) save_plot(file_name, file_type, path)
   ## now we create the plot
   #* increase the number of tick marks
   ## this gets overwritten by the polygon
