@@ -20,9 +20,10 @@ NULL
 #' @param xlab x-axis label
 #' @param ylab y-axis label
 #' @param save logical to specify whether the plot should be saved (if TRUE a
-#' file_name must be supplied)
-#' @param file_name valid file name list to store model results
-#' @param file_type default = png
+#' file_name must be supplied) if TRUE calls \code{\link{save_plot}}
+#' @param file_name valid file name list to store model results passed to
+#'  \code{\link{save_plot}}
+#' @param file_type default = png, passed to \code{\link{save_plot}}
 #' @param graph_pars graphical parameters passed to par
 #' @name plotting
 NULL
