@@ -5,9 +5,11 @@
 #'
 #' Plot a timeseries with uncertainty represented as a grey polygon with the
 #' option of adding a second series to the plot
-#' @param d dataframe with columns represnting the (could rename d to be the main series?)
-#' @param xs vector of
-#' @param d2 a second series to add as a line plot
+#' @param d dataframe with columns representing each of the ys (could rename d to be the main series?)
+#' @param xs vector of xs corresponding with the columns of d (if NULL, names of
+#' d are used)
+#' @param d2 a dataframe with the same number of columns as d used to add a
+#' second series as a line plot (same xs are used)
 #' @inheritParams plotting
 #' @export
 plot_ts_uncertainty <- function(d,

@@ -10,11 +10,13 @@ plot_ts_uncertainty(d, xs = NULL, d2 = NULL, probs = c(lwr = 0.025, mid =
   graph_pars = list(mfrow = c(1, 1), mar = c(4, 4, 1, 1), las = 2))
 }
 \arguments{
-\item{d}{dataframe with columns represnting the (could rename d to be the main series?)}
+\item{d}{dataframe with columns representing each of the ys (could rename d to be the main series?)}
 
-\item{xs}{vector of}
+\item{xs}{vector of xs corresponding with the columns of d (if NULL, names of
+d are used)}
 
-\item{d2}{a second series to add as a line plot}
+\item{d2}{a dataframe with the same number of columns as d used to add a
+second series as a line plot (same xs are used)}
 
 \item{probs}{quantile probabilities for plotting}
 
