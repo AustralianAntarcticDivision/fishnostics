@@ -11,11 +11,12 @@
 \item{ylab}{y-axis label}
 
 \item{save}{logical to specify whether the plot should be saved (if TRUE a
-file_name must be supplied)}
+file_name must be supplied) if TRUE calls \code{\link{save_plot}}}
 
-\item{file_name}{valid file name list to store model results}
+\item{file_name}{valid file name list to store model results passed to
+\code{\link{save_plot}}}
 
-\item{file_type}{default = png}
+\item{file_type}{default = png, passed to \code{\link{save_plot}}}
 
 \item{graph_pars}{graphical parameters passed to par}
 }
