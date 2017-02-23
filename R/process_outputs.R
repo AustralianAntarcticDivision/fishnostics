@@ -20,9 +20,9 @@ process_two_series <- function(res, true_vars, est_vars, col_names=NULL, FUN){
     stop(paste0("supplied FUN must be one of ", valid_FUNs))
   if(length(true_vars) != length(est_vars))
     stop("true_vars and est_vars are different lengths")
-  if(!any(true_vars) %in% names(d))
+  if(!any(true_vars %in% names(res)))
     stop("one or more true_vars are not present in res")
-  if(!any(est_vars) %in% names(d))
+  if(!any(est_vars %in% names(res)))
     stop("one or more est_vars are not present in res")
   if(is.null(col_names))
     ##* still need to add a pattern check to the column names
@@ -58,9 +58,9 @@ process_single_series <- function(res, vars, ref, col_names=NULL, FUN){
   ## do some checks on d
   if(!FUN %in% valid_FUNs)
     stop(paste0("supplied FUN must be one of ", valid_FUNs))
-  if(!any(vars) %in% names(d))
+  if(!any(vars %in% names(res)))
     stop("one or more vars are not present in res")
-  if(!(comp) %in% names(d))
+  if(!(comp) %in% names(res))
     stop("comp is not present in res")
   if(is.null(col_names))
     ##* still need to add a pattern check to the column names
