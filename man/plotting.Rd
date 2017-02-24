@@ -10,6 +10,8 @@
 
 \item{ylab}{y-axis label}
 
+\item{main}{main label}
+
 \item{save}{logical to specify whether the plot should be saved (if TRUE a
 file_name must be supplied) if TRUE calls \code{\link{save_plot}}}
 

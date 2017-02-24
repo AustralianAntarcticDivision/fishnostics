@@ -19,6 +19,7 @@ NULL
 #' @param probs quantile probabilities for plotting
 #' @param xlab x-axis label
 #' @param ylab y-axis label
+#' @param main main label
 #' @param save logical to specify whether the plot should be saved (if TRUE a
 #' file_name must be supplied) if TRUE calls \code{\link{save_plot}}
 #' @param file_name valid file name list to store model results passed to

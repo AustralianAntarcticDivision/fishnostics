@@ -16,7 +16,7 @@ plot_ts_uncertainty <- function(d,
                                 xs=NULL,
                                 d2=NULL,
                                 probs=c("lwr"=0.025, "mid"=0.5, "upr"=0.975),
-                                xlab="", ylab="",
+                                xlab="", ylab="", main="",
                                 save=FALSE, file_name=NULL, file_type="png", path=NULL,
                                 graph_pars=list(mfrow=c(1,1), mar=c(4,4,1,1),
                                                 las=2)

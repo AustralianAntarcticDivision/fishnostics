@@ -5,7 +5,7 @@
 \title{Plot a timeseries with uncertainty}
 \usage{
 plot_ts_uncertainty(d, xs = NULL, d2 = NULL, probs = c(lwr = 0.025, mid =
-  0.5, upr = 0.975), xlab = "", ylab = "", save = FALSE,
+  0.5, upr = 0.975), xlab = "", ylab = "", main = "", save = FALSE,
   file_name = NULL, file_type = "png", path = NULL,
   graph_pars = list(mfrow = c(1, 1), mar = c(4, 4, 1, 1), las = 2))
 }
@@ -23,6 +23,8 @@ second series as a line plot (same xs are used)}
 \item{xlab}{x-axis label}
 
 \item{ylab}{y-axis label}
+
+\item{main}{main label}
 
 \item{save}{logical to specify whether the plot should be saved (if TRUE a
 file_name must be supplied) if TRUE calls \code{\link{save_plot}}}
